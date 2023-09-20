@@ -172,4 +172,27 @@ header{
 .bt1{
     background-color: #B327C1;
     color: white;
+    border-radius: 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+.bt2{
+    
+    border-radius: 10px;
+    border: 1px sloid #B327C1;
+    padding: 10px 15px;
+}
+.section4{
+    text-align: center;
+}
+.sec4-p{
+  text-align: center;
+   width:60%;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+.ftr{
+    display: flex;
 }
