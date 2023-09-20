@@ -41,10 +41,7 @@ header{
     color: white;
     padding:10px  15px;
     height: 50px;
-    white-space: nowrap; /* Prevent text from wrapping */
-    text-align: center; /* Center the text horizontally */
-    display: block; /* Make the link a block-level element */
-    line-height: 1.2; 
+    
     
 }
 .main-sec{
