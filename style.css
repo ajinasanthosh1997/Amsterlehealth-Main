@@ -189,10 +189,15 @@ header{
   text-align: center;
    width:60%;
 }
-footer{
+.footer{
     display: flex;
     justify-content: space-between;
+    background-color:#F4F4F4;
+    
 }
 .ftr{
+    display: flex;
+}
+.ftr1{
     display: flex;
 }
