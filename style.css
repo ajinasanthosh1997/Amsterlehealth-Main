@@ -240,7 +240,7 @@ header{
     bottom: 239px;
     right: 683px;
     height: 438px;
-   
+           
     top: 198rem;
     left: 2px;
     z-index: 0;
@@ -248,6 +248,14 @@ header{
 .card-pos{
   
     z-index: 1;
+}
+.section6{
+    margin-top: 245px;
+    
+}
+.sec6{
+    text-align: center;
+    padding: 20px;
 }
 
 
