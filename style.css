@@ -152,17 +152,17 @@ header{
 .sec3-img1{
     position: absolute;
     top: 1387px;
-    right: 562px;
+    right: 433px;
 }
 .sec3-img2{
     position: absolute;
     top: 1298px;
-    right: 359px;
+    right: 234px;
 }
 .sec3-img3{
     position: absolute;
     top: 1535px;
-    right: 389px;
+    right: 264px;
 }
 .sec3-font{
     font-family: Poppins;
@@ -229,7 +229,7 @@ header{
     
 }
 .sec4-card1{
-    border-radius: 10px;
+    border-radius: 20px;
     background-color:#F4F4F4;
     padding: 32px 31px;
     height: 180px;
