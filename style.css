@@ -12,20 +12,20 @@ header{
 
 .logo{
     display: flex;
-    gap: 10px;
-    padding: 0px 26px;
+    gap: 30px;
+    padding: 15px 26px;
     
 }
 
 .icon{
     display: flex;
     gap: 10px;
-    
+    width: 100px;
 }
 
 .nav{
     display: flex;
-    padding-top: 10px;
+    
     gap:10px;
     
 
@@ -36,8 +36,10 @@ header{
     padding:5px 15px;
     
 }
-
-.nav-button{
+.nav1{
+    padding-top: 18px;
+}
+/* .nav-button{
     text-decoration: none;
     background-color:  #B327C1;
     color: white;
@@ -45,7 +47,18 @@ header{
     height: 50px;
     
     
-}
+} */
+.nav-button {
+    display: inline-block;
+    width: 150px;
+    height: 64px;
+    text-align: center;
+    padding-top: 11px;
+    background-color: #B327C1;
+    color: #fff;
+    text-decoration: none;
+  }
+  
 .main-sec{
     display: flex;
     justify-content: space-between;
@@ -54,7 +67,7 @@ header{
 .sec-h1{
     color: #161616;
     font-family: Poppins;
-    font-size: 40px;
+    font-size: 38px;
     font-style: normal;
     font-weight: 400;
     line-height: 46px; /* 121.053% */
@@ -65,7 +78,7 @@ header{
 
     /* body text 16px */
     font-family: IBM Plex Sans;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 133.333% */
@@ -95,7 +108,7 @@ header{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline;
-    font-size: 48px;
+    font-size: 46px;
     font-style: normal;
     font-weight: 400;
     line-height: 54.34px;
@@ -137,13 +150,13 @@ header{
     align-items: center;
     color:rgba(0, 0, 0, 0.64);
     width:37%;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 32px; /* 200% */
 }
 .sec1-p{
     color: rgba(0, 0, 0, 0.64);
     font-family: IBM Plex Sans;
-    font-size: 24px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: 32px; /* 133.333% */
@@ -166,14 +179,14 @@ header{
 }
 .sec3-font{
     font-family: Poppins;
-    font-size: 38px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 400;
 }
 .read1{
     color: #B327C1;
     font-family: 'Fira Sans', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px; 
@@ -184,12 +197,23 @@ header{
     width: 34rem;
     padding: 125px;
 }
+.bt{
+    text-align: left;
+}
 .bt1{
     background-color: #B327C1;
     color: white;
     border-radius: 10px;
     padding: 10px 15px;
     text-decoration: none;
+    color: var(--text-text-04, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: IBM Plex Sans;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.125rem; /* 128.571% */
+    letter-spacing: 0.01rem;
 }
 .bt2{
     
@@ -197,6 +221,14 @@ header{
     border: 1px solid #B327C1;
     padding: 10px 15px;
     text-decoration: none;
+    color: #B327C1;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: IBM Plex Sans;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.125rem; /* 128.571% */
+    letter-spacing: 0.01rem;
 }
 .section4{
     text-align: center;
@@ -208,7 +240,7 @@ header{
     text-align: center;
     text-overflow: ellipsis;
     font-family: IBM Plex Sans;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     /* line-height: 24px;    150% */
@@ -228,6 +260,7 @@ header{
     text-align: left;
     
 }
+
 .sec4-card1{
     border-radius: 20px;
     background-color:#F4F4F4;
@@ -235,13 +268,38 @@ header{
     height: 180px;
     width: 378px;
 }
+.sec4-card1:hover {
+    background: linear-gradient(45deg, 
+      #e3d7ff,    /* Even lighter shade of #4200FF */
+      #f0e4ff,    /* Even lighter shade of #820FE7 */
+      #f9d4f1,    /* Even lighter shade of #9C29BE */
+      #ffd9fa,    /* Even lighter shade of #FD7042 */
+      #ffece3     /* Even lighter shade of #FC9D49 */
+    );
+  }
+.card-style{
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem; /* 150% */
+}  
+.card-style1{
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 150% */
+    width: 60%;
+}
 .sec5-img{
     position: absolute;
-    bottom: 239px;
+    
     right: 683px;
-    height: 438px;
-           
-    top: 198rem;
+    height: 408px;
+    top: 192rem;
     left: 2px;
     z-index: 0;
 }
@@ -257,11 +315,134 @@ header{
     text-align: center;
     padding: 20px;
 }
+.sec6-p{
+    overflow: hidden;
+    color: rgba(22, 22, 22, 0.64);
+    text-align: center;
+    text-overflow: ellipsis;
 
+    /* Headline small 24px */
+    font-family: IBM Plex Sans;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem; /* 133.333% */
+}
+.sec6-div{
+    margin-top: 55px;
+}
+.sec6-link1{
+    
+    position: relative;
+    background-color:  #dad9d9;
+    padding: 10px 40px;
+    text-decoration: none;
+    font-family: IBM Plex Sans;
+    font-size: 0.875rem;
+    font-weight: 2;
+    color: black;
+}
+.sec6-link1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px; /* Adjust the thickness of the bottom line as needed */
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(45deg, #4200FF, #820FE7, #9C29BE, #FD7042, #FC9D49);
+  }
+.sec6-link{
+    
+    padding: 10px 40px;
+    text-decoration: none;
+    font-family: IBM Plex Sans;
+    font-size: 0.875rem;
+    color: black;
+}
 
+.sec6-div1{
+    display: flex;
+    gap: 14rem;
+    /* margin-top: 70px; */
+    padding: 80px;
+}
 
+.sec6-card{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    text-align: left;
+    margin-top:40px;
+    
+}
+.sec6-card1{
+    border-radius: 20px;
+    background-color: #F4F4F4;
+    padding: 26px 21px;
+    height: 120px;
+    width: 260px;
+}
+.sec6-card-img{
+    height: 24px;
+}
+.sec6-card1:hover {
+    background: linear-gradient(45deg, 
+      #e3d7ff,    /* Even lighter shade of #4200FF */
+      #f0e4ff,    /* Even lighter shade of #820FE7 */
+      #f9d4f1,    /* Even lighter shade of #9C29BE */
+      #ffd9fa,    /* Even lighter shade of #FD7042 */
+      #ffece3     /* Even lighter shade of #FC9D49 */
+    );
+  }
 
+.sec6-img{
+    position: absolute;
+    top: 247rem;
+    right: 0px;
+}
+.sec6-img1{
+    position: absolute;
+    top: 253rem;
+    right: 0px;
+    z-index: 1;
+}
+.sec6-head{
+    color: #000;
 
+    /* Headline small 24px */
+    font-family: IBM Plex Sans;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem; /* 133.333% */
+}
+
+.sec6-p1{
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 150% */
+}
+
+.sec6-crd{
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem; /* 171.429% */
+}
+
+.sec6-crd1{
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 171.429% */
+}
 
 
 
