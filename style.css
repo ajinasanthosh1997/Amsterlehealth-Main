@@ -179,7 +179,7 @@ header{
 }
 .sec3-font{
     font-family: Poppins;
-    font-size: 36px;
+    font-size: 34px;
     font-style: normal;
     font-weight: 400;
 }
@@ -209,7 +209,7 @@ header{
     color: var(--text-text-04, #FFF);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: IBM Plex Sans;
-    font-size: 0.875rem;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.125rem; /* 128.571% */
@@ -224,7 +224,7 @@ header{
     color: #B327C1;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: IBM Plex Sans;
-    font-size: 0.875rem;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.125rem; /* 128.571% */
@@ -280,7 +280,7 @@ header{
 .card-style{
     color: #000;
     font-family: IBM Plex Sans;
-    font-size: 1rem;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 1.5rem; /* 150% */
@@ -288,7 +288,7 @@ header{
 .card-style1{
     color: #000;
     font-family: IBM Plex Sans;
-    font-size: 1rem;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5rem; /* 150% */
@@ -323,7 +323,7 @@ header{
 
     /* Headline small 24px */
     font-family: IBM Plex Sans;
-    font-size: 1.5rem;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 2rem; /* 133.333% */
@@ -474,7 +474,7 @@ footer{
 .ftr-list{
     color: #000;
     font-family: IBM Plex Sans;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px; /* 150% */
@@ -482,7 +482,7 @@ footer{
 .ftr-con{
     color: #000;
     font-family: IBM Plex Sans;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 4px; /* 157.143% */
@@ -490,7 +490,7 @@ footer{
 .ftr-list1{
     color: #121212;
     font-family: IBM Plex Sans;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 22px; /* 157.143% */
@@ -498,7 +498,7 @@ footer{
 .ftr-con1{
     color: #121212;
     font-family: IBM Plex Sans;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 157.143% */
@@ -506,7 +506,7 @@ footer{
 .ftr-con2{
     color: #000;
     font-family: IBM Plex Sans;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
