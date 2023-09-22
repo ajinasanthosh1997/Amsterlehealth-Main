@@ -164,17 +164,17 @@ header{
 
 .sec3-img1{
     position: absolute;
-    top: 1252px;
+    top: 1395px;
     right: 413px;
 }
 .sec3-img2{
     position: absolute;
-    top: 1166px;
+    top: 1309px;
     right: 212px;
 }
 .sec3-img3{
     position: absolute;
-    top: 1407px;
+    top: 1551px;
     right: 241px;
 }
 .sec3-font{
@@ -277,15 +277,16 @@ header{
     justify-content: center;
     gap: 1rem;
     text-align: left;
+    margin-top: 40px;
     
 }
 
 .sec4-card1{
     border-radius: 20px;
-    background-color:#F4F4F4;
+    background-color: #F4F4F4;
     padding: 32px 31px;
-    height: 180px;
-    width: 378px;
+    height: 142px;
+    width: 311px;
 }
 .sec4-card1:hover {
     background: linear-gradient(45deg, 
@@ -315,10 +316,9 @@ header{
 }
 .sec5-img{
     position: absolute;
-    
-    right: 683px;
-    height: 408px;
-    top: 192rem;
+    right: 569px;
+    height: 287px;
+    top: 194rem;
     left: 2px;
     z-index: 0;
 }
@@ -465,7 +465,7 @@ header{
 .sec6-img4{
     width: 36rem;
     position: absolute;
-    top: 241rem;
+    top: 242rem;
     left: 56rem;
 }
 .gradient-text1{
@@ -500,7 +500,7 @@ header{
 }
 .services1{
     display: flex;
-    margin-left: 27rem;
+    /* margin-left: 27rem; */
     font-family: IBM Plex Sans;
 }
 .services2{
@@ -665,4 +665,77 @@ footer{
     font-weight: 400;
     line-height: 2rem; /* 133.333% */
 }
+
+.sec5-p1{
+    border-radius: 1.5rem;
+    background: #F4F4F4;
+    display: flex;
+    width: 47.375rem;
+    height: 4.5rem;
+    padding: 0.5625rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.625rem;
+    flex-shrink: 0;
+}
+
+.sec5-p2{
+    border-radius: 1.5rem;
+    background: #F4F4F4;
+    display: flex;
+    width: 43rem;
+    height: 4.5rem;
+    padding: 0.5625rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.625rem;
+    flex-shrink: 0;
+}
+.sec5-p3{
+    border-radius: 1.5rem;
+    background: #F4F4F4;
+    
+}
+.sec5-p4{
+    border-radius: 1.5rem;
+    background: #F4F4F4;
+    display: flex;
+    width: 43rem;
+    height: 4.5rem;
+    padding: 0.5625rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.625rem;
+    flex-shrink: 0;
+}
+.sec5-p5{
+    border-radius: 1.5rem;
+    background: #F4F4F4;
+    display: flex;
+    width: 43rem;
+    height: 4.5rem;
+    padding: 0.5625rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.625rem;
+    flex-shrink: 0;
+}
+.sec5-p6{
+    border-radius: 1.5rem;
+    background: #F4F4F4;
+    display: flex;
+    width: 43rem;
+    height: 4.5rem;
+    padding: 0.5625rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.625rem;
+    flex-shrink: 0;
+}
+
 
