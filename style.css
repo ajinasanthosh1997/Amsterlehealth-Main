@@ -164,18 +164,18 @@ header{
 
 .sec3-img1{
     position: absolute;
-    top: 1387px;
-    right: 433px;
+    top: 1252px;
+    right: 413px;
 }
 .sec3-img2{
     position: absolute;
-    top: 1298px;
-    right: 234px;
+    top: 1166px;
+    right: 212px;
 }
 .sec3-img3{
     position: absolute;
-    top: 1535px;
-    right: 264px;
+    top: 1407px;
+    right: 241px;
 }
 .sec3-font{
     font-family: Poppins;
@@ -620,7 +620,7 @@ footer{
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 4px; /* 157.143% */
+    line-height: 22px; /* 157.143% */
 }
 .ftr-list1{
     color: #121212;
