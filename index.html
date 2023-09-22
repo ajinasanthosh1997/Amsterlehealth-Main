@@ -48,7 +48,7 @@
         </div>  
     </header>
     <section class="main-sec">
-        <div class="heading">
+        <!-- <div class="heading">
             <div>
                 <h1 class="gradient-text sec-h1">Healthcare management systems for a connected future</h1>
                 <p class="sec-p1">Fully Integrated Web-based Applications for managing all types of Medical Clinics and Medical Centers in UAE & GCC Countries”.</p>
@@ -60,8 +60,81 @@
         </div>
         <div>
             <img src="image/Frame 695.svg">
+        </div> -->
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <div class="hero-wrap" style="background-image: url('image/doctor-visiting-senior-patient-with-family-2022-03-07-17-45-12-utc.jpg');">
+                    <div class="home-box">
+                        <div class="row no-gutters slider-text align-items-center justify-content-left">
+                            <div class="col-md-8 ftco-animate text-left home-box-text">
+                                <div class="heading">
+                                    <div>
+                                        <h1 class="gradient-text sec-h1">Healthcare management systems for a connected future</h1>
+                                        <p class="sec-p1">Fully Integrated Web-based Applications for managing all types of Medical Clinics and Medical Centers in UAE & GCC Countries”.</p>
+                                    </div>
+                                    <div class="bt">
+                                        <a href="#" class="bt1">Download Brochure</a>   
+                                        <a href="#" class="bt2">Book a demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Add more slides as needed -->
+            <div class="mySlides">
+                <div class="hero-wrap" style="background-image: url('image/auditor-or-internal-revenue-service-staff-2022-11-16-18-05-21-utc.jpg');">
+                    <div class="home-box">
+                        <div class="row no-gutters slider-text align-items-center justify-content-left">
+                            <div class="col-md-8 ftco-animate text-left home-box-text">
+                                <div class="heading">
+                                    <div>
+                                        <h1 class="gradient-text sec-h1">Healthcare management systems for a connected future</h1>
+                                        <p class="sec-p1">Fully Integrated Web-based Applications for managing all types of Medical Clinics and Medical Centers in UAE & GCC Countries”.</p>
+                                    </div>
+                                    <div class="bt">
+                                        <a href="#" class="bt1">Download Brochure</a>   
+                                        <a href="#" class="bt2">Book a demo</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div style="text-align:center;">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <!-- Add more dots for additional slides -->
+        </div>
+        <script>
+            // JavaScript for image slider
+            let slideIndex = 0;
+            showSlides();
+    
+            function showSlides() {
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1;
+                }
+                for (let i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 3000); // Change image every 2 seconds (adjust as needed)
+            }
+        </script>
     </section>
+    
     <section class="section1">
         <div class="card">
             <p class="gradient-text">450</p>
@@ -320,5 +393,6 @@
         </div>
         
     </footer> 
+    
 </body>
 </html>
