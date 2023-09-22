@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <style>
+        /* Add your CSS styles here */
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .hero-wrap {
+            width: 100%;
+            height: 400px; /* Set the height of your slider */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Add additional styles for navigation dots if needed */
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="hero-wrap" style="background-image: url('image/doctor-visiting-senior-patient-with-family-2022-03-07-17-45-12-utc.jpg');">
+                <div class="home-box">
+                    <div class="row no-gutters slider-text align-items-center justify-content-left">
+                        <div class="col-md-8 ftco-animate text-left home-box-text">
+                            <h1 class="mb-8">Slide 1</h1>
+                            <p>Slide 1 content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more slides as needed -->
+        <div class="mySlides">
+            <div class="hero-wrap" style="background-image: url('image/auditor-or-internal-revenue-service-staff-2022-11-16-18-05-21-utc.jpg');">
+                <div class="home-box">
+                    <div class="row no-gutters slider-text align-items-center justify-content-left">
+                        <div class="col-md-8 ftco-animate text-left home-box-text">
+                            <h1 class="mb-8">Slide 2</h1>
+                            <p>Slide 2 content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navigation dots -->
+    <div style="text-align:center;">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <!-- Add more dots for additional slides -->
+    </div>
+
+    <script>
+        // JavaScript for image slider
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 2 seconds (adjust as needed)
+        }
+    </script>
+</body>
+</html>
