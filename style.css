@@ -233,7 +233,7 @@ header{
 }
 /* Add this CSS code to your style.css file */
 .overlay {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     width: 100%;
@@ -270,6 +270,7 @@ header{
 
 .section5{
     text-align: center;
+    padding: 0px 95px
     
 }
 .sec4-card{
@@ -327,7 +328,7 @@ header{
     z-index: 1;
 }
 .section6{
-    margin-top: 245px;
+    /* margin-top: 245px; */
     
 }
 .sec6{
@@ -667,75 +668,142 @@ footer{
 }
 
 .sec5-p1{
-    border-radius: 1.5rem;
+    border-radius: 20px;
     background: #F4F4F4;
     display: flex;
     width: 47.375rem;
-    height: 4.5rem;
+    height: 2.5rem;
     padding: 0.5625rem 2rem;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 0.625rem;
     flex-shrink: 0;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.sec5-p1:hover{
+    background-color: #28079f;
+    color: white;
 }
 
+
 .sec5-p2{
-    border-radius: 1.5rem;
+    border-radius: 20px;
     background: #F4F4F4;
     display: flex;
     width: 43rem;
-    height: 4.5rem;
+    height: 2.5rem;
     padding: 0.5625rem 2rem;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 0.625rem;
     flex-shrink: 0;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
+.sec5-p2:hover{
+    background-color: #28079f;
+    color: white;
+}
+
 .sec5-p3{
-    border-radius: 1.5rem;
+    border-radius: 20px;
     background: #F4F4F4;
+    display: flex;
+    width: 40.25rem;
+    height: 2.5rem;
+    padding: 0.5625rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     
 }
+.sec5-p3:hover{
+    background-color: #28079f;
+    color: white;
+}
 .sec5-p4{
-    border-radius: 1.5rem;
+    border-radius: 20px;
     background: #F4F4F4;
     display: flex;
-    width: 43rem;
-    height: 4.5rem;
+    width: 38.375rem;
+    height: 2.5rem;
     padding: 0.5625rem 2rem;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 0.625rem;
     flex-shrink: 0;
+    margin-top: 16px;
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.sec5-p4:hover{
+    background-color: #28079f;
+    color: white;
 }
 .sec5-p5{
-    border-radius: 1.5rem;
+    border-radius: 20px;
     background: #F4F4F4;
     display: flex;
-    width: 43rem;
-    height: 4.5rem;
+    width: 36.875rem;
+    height: 2.5rem;
     padding: 0.5625rem 2rem;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 0.625rem;
     flex-shrink: 0;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+.sec5-p5:hover{
+    background-color: #28079f;
+    color: white;
 }
 .sec5-p6{
-    border-radius: 1.5rem;
+    border-radius: 20px;
     background: #F4F4F4;
     display: flex;
-    width: 43rem;
-    height: 4.5rem;
+    width: 36.4375rem;
+    height: 2.5rem;
     padding: 0.5625rem 2rem;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 0.625rem;
     flex-shrink: 0;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   
+}
+.sec5-p6:hover{
+    background-color: #28079f;
+    color: white;
+}
+.sec5-font{
+    color: rgba(0, 0, 0, 0.64);
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem; /* 100% */
+}
+.sec5-flex{
+    display: flex;
 }
 
 
