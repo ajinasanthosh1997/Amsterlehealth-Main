@@ -380,7 +380,7 @@ header{
     background-color: #F4F4F4;
     padding: 26px 21px;
     height: 120px;
-    width: 260px;
+    width: 213px;
 }
 .sec6-card-img{
     height: 24px;
@@ -443,6 +443,12 @@ header{
     font-weight: 400;
     line-height: 1.5rem; /* 171.429% */
 }
+.sec6-img4{
+    width: 36rem;
+    position: absolute;
+    top: 241rem;
+    left: 56rem;
+}
 .gradient-text1{
     background: linear-gradient(45deg, #4200FF, #820FE7, #9C29BE, #FD7042, #FC9D49);
     -webkit-background-clip: text;
@@ -461,8 +467,87 @@ header{
     font-weight: 400;
     line-height: 2rem; /* 133.333% */
 }
-
-
+.API{
+    margin: 3rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+font-family: 'Montserrat', sans-serif;
+.services{
+    text-align: center;
+    /* display: flexbox; */
+}
+.services1{
+    display: flex;
+    margin-left: 27rem;
+    font-family: IBM Plex Sans;
+}
+.services2{
+    width: 28rem;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 5px;
+}
+.services3{
+    width: 28rem;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 5px;
+}
+.services4{
+    width: 28rem;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 5px;
+}
+.main{
+    margin: 5rem;
+    display: inline-grid;
+    gap: 20px;
+}
+#main1{
+    padding: 10px;
+    font-family: IBM Plex Sans;
+}
+#main2{
+    padding: revert;
+    font-family: IBM Plex Sans;
+}
+.test{
+    text-align: center;
+    font-family: Montserrat;
+}
+.test1{
+    width: 25rem;
+    margin-left: 35rem;
+}
+.main11{
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem;
+}
+.API1{
+    padding: 5rem;
+}
+.img_one{
+    position: relative;
+    bottom: 86px;
+    width: 15rem;
+}
+.img_two{
+    position: relative;
+    bottom: 221px;
+    right: -93px;
+}
+V_CARE{
+    text-align: center;
+}
+.sec-flex{
+    display: flex;
+    gap: 112px;
+}
 footer{
     background-color:#F4F4F4;
 }
