@@ -129,13 +129,16 @@
         <div style="text-align:center;">
             <span class="dot"></span>
             <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
             <!-- Add more dots for additional slides -->
         </div>
         <script>
-            // JavaScript for image slider
+            // JavaScript for looping image slider
             let slideIndex = 0;
             showSlides();
-    
+        
             function showSlides() {
                 let slides = document.getElementsByClassName("mySlides");
                 let dots = document.getElementsByClassName("dot");
@@ -144,16 +147,18 @@
                 }
                 slideIndex++;
                 if (slideIndex > slides.length) {
-                    slideIndex = 1;
+                    slideIndex = 1; // Reset to the first slide
                 }
                 for (let i = 0; i < dots.length; i++) {
                     dots[i].className = dots[i].className.replace(" active", "");
                 }
                 slides[slideIndex - 1].style.display = "block";
                 dots[slideIndex - 1].className += " active";
-                setTimeout(showSlides, 3000); // Change image every 2 seconds (adjust as needed)
+                setTimeout(showSlides, 2000); // Change image every 2 seconds (adjust as needed)
             }
         </script>
+        
+        
     </section>
     
     <section class="section1">
