@@ -33,6 +33,7 @@ header{
 }
 
 .nav-link{
+    color: black !important;
     text-decoration: none;      
     padding:5px 15px;
     
@@ -1068,9 +1069,14 @@ footer{
 
 /* aboutus.html */
 .about-sec1{
+    margin-top: 4rem;
     text-align: center;
 }
+.about-sec2{
+    margin-top: 4rem;
+}
 .about-sec1-h1{
+   
     color: #000;
 
     /* Headline 38px */
@@ -1081,6 +1087,7 @@ footer{
     line-height: 2.875rem; /* 121.053% */
 }
 .about-sec1-p{
+    margin-top: 2rem;
     color: rgba(0, 0, 0, 0.60);
     text-align: center;
 
@@ -1115,6 +1122,7 @@ footer{
     line-height: 1.5rem; /* 133.333% */
 }
 .about-sec1-p2{
+    margin-top: 4rem;
     color: rgba(0, 0, 0, 0.60);
 
     /* body text 16px */
@@ -1134,6 +1142,116 @@ footer{
     align-items: flex-start;
     gap: 2.125rem;
 }
+.about-card3{
+    margin-top: 2rem;
+    border-radius: 20px;
+    background-color: #F4F4F4;
+    display: flex;
+    width: 37.875rem;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.125rem;
+}
 .about-card-flex{
     display: flex;
+}
+.about-sec2-border{
+    border-left: 1px solid #B327C1;
+    margin:4rem 0;
+}
+.about-card2{
+    margin-top: 2rem;
+    border-radius: 20px;
+    background-color: #F4F4F4;
+    display: flex;
+    width: 20.875rem;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.125rem;
+}
+.about-sec2-margin{
+    margin:0 5rem;
+}
+.about-sec2-flex1{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.1875rem;
+}
+.about-img{
+    margin-top: 4rem;
+}
+.about-sec2-font{
+    color: #000;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.about-sec2-font1{
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.about-card-flex-font{
+    color: #121212;
+    font-family: IBM Plex Sans;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+/* team.html */
+
+.team-img{
+    width: 100%;
+}
+
+.team-img1{
+    margin-top: 4rem;
+    display: flex;
+    gap:1rem;
+
+}
+
+.team-img2{
+    margin-top: 4rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.team-sec{
+    display: inline-flex;
+    padding: 8.125rem 10.125rem 9.375rem 14.125rem;
+    flex-direction: column;
+
+}
+.team-font1{
+    color: #000;
+
+    /* Headline small 24px */
+    font-family: IBM Plex Sans;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem; /* 133.333% */
+}
+.team-font2{
+    color: #000;
+
+    /* body text 16px */
+    font-family: IBM Plex Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4rem; /* 133.333% */
 }
