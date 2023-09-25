@@ -312,7 +312,18 @@ header{
 .sec5-img{
     position: relative;
     bottom: 6px;
-    right: 103px;
+    right: 38px;
+}
+.sec5-img1{
+    position: absolute;
+    top: 174rem;
+    left: 79rem;
+
+}
+.sec5-img2{
+    position: absolute;
+    top: 174rem;
+    left: 57rem;
 
 }
 .card-pos{
@@ -520,15 +531,33 @@ header{
     margin: 5rem;
     display: inline-grid;
     gap: 20px;
+    text-align: left;
 }
 #main1{
-    padding: 10px;
+    padding: 15px;
     font-family: IBM Plex Sans;
+    color: #000;
+font-family: IBM Plex Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 1.5rem; /* 150% */
+}
+#main12{
+    padding: 15px;
+    color: #000;
+font-family: IBM Plex Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5rem; /* 150% */
 }
 #main2{
     padding: revert;
     font-family: IBM Plex Sans;
 }
+
+
 .test{
     text-align: center;
     font-family: Montserrat;
@@ -543,7 +572,7 @@ header{
     padding: 5rem;
 }
 .API1{
-    padding: 5rem;
+    padding: 8rem;
 
 }
 .img_one{
@@ -581,7 +610,7 @@ header{
 }
 .sec-flex{
     display: flex;
-    gap: 112px;
+    gap: 101px;
 }
 .image-slider {
     position: relative;
