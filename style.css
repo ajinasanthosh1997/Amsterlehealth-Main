@@ -730,7 +730,7 @@ line-height: 1.5rem; /* 150% */
 
 .article_card__body {
     position: relative;
-    height: 120px;
+    height: 142px;
     padding: 20px;
     -webkit-transition: height 0.5s;
     transition: height 0.5s;
@@ -820,7 +820,7 @@ footer{
 }
 .footer{
     display: flex;
-    gap: 35rem;
+    gap: 24rem;
     padding: 25px 30px;
     
 }
@@ -1058,5 +1058,82 @@ footer{
 }
 .test-flex{
     display: flex;
-  justify-content: center;
+  justify-content: left;
+}
+
+.about-1{
+    width: 865px;
+}
+
+
+/* aboutus.html */
+.about-sec1{
+    text-align: center;
+}
+.about-sec1-h1{
+    color: #000;
+
+    /* Headline 38px */
+    font-family: Poppins;
+    font-size: 2.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.875rem; /* 121.053% */
+}
+.about-sec1-p{
+    color: rgba(0, 0, 0, 0.60);
+    text-align: center;
+
+    /* Headline small 24px */
+    font-family: IBM Plex Sans;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem; /* 133.333% */
+}
+.about-sec2-flex{
+    display: flex;
+    gap: 6rem;
+    padding: 40px;
+}
+.about-sec1-h3{
+    color: #000;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem; /* 133.333% */
+}
+.about-sec1-p1{
+    color: rgba(0, 0, 0, 0.60);
+
+    /* body text 16px */
+    font-family: IBM Plex Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 133.333% */
+}
+.about-sec1-p2{
+    color: rgba(0, 0, 0, 0.60);
+
+    /* body text 16px */
+    font-family: IBM Plex Sans;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem; /* 133.333% */
+}
+.about-card1{
+    border-radius: 20px;
+    background-color: #F4F4F4;
+    display: flex;
+    width: 37.875rem;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.125rem;
+}
+.about-card-flex{
+    display: flex;
 }
