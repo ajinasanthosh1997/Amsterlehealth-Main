@@ -41,19 +41,12 @@ header{
     display: flex;
     padding-top: 18px;
 }
-/* .nav-button{
-    text-decoration: none;
-    background-color:  #B327C1;
-    color: white;
-    padding:10px  15px;
-    height: 50px;
-    
-    
-} */
+
+
 .nav-button {
     display: inline-block;
     width: 150px;
-    height: 64px;
+    height: 68px;
     text-align: center;
     padding-top: 11px;
     background-color: #B327C1;
