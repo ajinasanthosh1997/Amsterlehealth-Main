@@ -1,184 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+<style>
+/* Style the form title */
+h1 {
+  text-align: center;
+  color: white;
+  background-color: purple;
+  padding: 10px;
+}
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+/* Style the form */
+form {
+  width: 500px;
+  margin: 20px auto;
+  border: 2px solid #ccc;
+  padding: 20px;
+}
 
-        body {
-            font-family: "Open Sans";
-            font-size: 16px;
-            background-color: #eee;
-        }
+/* Style the input fields */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
 
-        .article_card {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translateX(-50%) translateY(-50%) translateZ(0);
-            transform: translateX(-50%) translateY(-50%) translateZ(0);
-            width: 370px;
-            background-color: #fff;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            -webkit-transition: box-shadow 0.5s;
-            transition: box-shadow 0.5s;
-            padding-bottom: 10px; /* Add padding to make space for the gradient line */
-        }
+/* Style the submit button */
+input[type=submit] {
+  background-color: purple;
+  color: white;
+}
 
-        .article_card a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        .article_card:hover {
-            box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
-        }
-
-        /* Add the pseudo-element for the gradient line */
-        .article_card::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 5px; /* Adjust the height of the gradient line */
-            background: linear-gradient(to right, #4200FF, #820FE7, #9C29BE, #FD7042, #FC9D49); /* Gradient added here */
-            opacity: 0; /* Initially hidden */
-            -webkit-transition: opacity 0.3s; /* Added transition */
-            transition: opacity 0.3s; /* Added transition */
-        }
-
-        /* Show the gradient line when hovering over the card */
-        .article_card:hover::after {
-            opacity: 1;
-        }
-
-        .article_card__thumb {
-            height: 245px;
-            overflow: hidden;
-            background-color: #000;
-            background: linear-gradient(45deg, #4200FF, #820FE7, #9C29BE, #FD7042, #FC9D49); /* Gradient added here */
-            -webkit-transition: height 0.5s;
-            transition: height 0.5s;
-        }
-
-        .article_card__thumb img {
-            width: 100%;
-            display: block;
-            opacity: 1;
-            -webkit-transform: scale(1);
-            transform: scale(1);
-            -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
-            transition: opacity 0.5s, -webkit-transform 0.5s;
-            transition: opacity 0.5s, transform 0.5s;
-            transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
-        }
-
-        .article_card:hover .article_card__thumb {
-            height: 130px;
-        }
-
-        .article_card:hover .article_card__thumb img {
-            opacity: 0.6;
-            -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-        }
-
-        .article_card__body {
-            position: relative;
-            height: 185px;
-            padding: 20px;
-            -webkit-transition: height 0.5s;
-            transition: height 0.5s;
-        }
-
-        .article_card:hover .article_card__body {
-            height: 300px;
-        }
-
-        .article_card__subtitle {
-            margin: 0;
-            padding: 0 0 10px 0;
-            font-size: 19px;
-            color: coral;
-        }
-
-        .article_card__description {
-            position: absolute;
-            left: 20px;
-            right: 20px;
-            bottom: 56px;
-            margin: 0;
-            padding: 0;
-            color: #666C74;
-            line-height: 27px;
-            opacity: 0;
-            -webkit-transform: translateY(45px);
-            transform: translateY(45px);
-            -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-            transition: opacity 0.3s, -webkit-transform 0.3s;
-            transition: opacity 0.3s, transform 0.3s;
-            transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
-            -webkit-transition-delay: 0s;
-            transition-delay: 0s;
-        }
-
-        .article_card:hover .article_card__description {
-            opacity: 1;
-            -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-            -webkit-transition-delay: 0.2s;
-            transition-delay: 0.2s;
-        }
-
-        .article_card__footer {
-            position: absolute;
-            bottom: 12px;
-            left: 20px;
-            right: 20px;
-            font-size: 11px;
-            color: #A3A9A2;
-        }
-
-        .icon {
-            display: inline-block;
-            vertical-align: middle;
-            margin: -2px 0 0 2px;
-            font-size: 18px;
-        }
-
-        .icon+.icon {
-            padding-left: 10px;
-        }
-    </style>
+/* Style the labels */
+label {
+  display: block;
+}
+</style>
 </head>
-
 <body>
-    <div>
-        <article class="article_card">
-            <header class="article_card__thumb">
-                <a href="#"><img src="image/Frame 194 1.svg"/></a>
-            </header>
-         
-            <div class="article_card__body">
-                <!-- <h2 class="article_card__title"><a href="#">an ice cream sundae party！</a></h2> -->
-                <div class="article_card__subtitle">ERP Systems - A world of Opportunities and Progress</div>
-                <p class="article_card__description">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-            </div>
-            <footer class="article_card__footer">
-                <span class="icon ion-chatbox"></span><a href="#">30/10/2023</a>
-            </footer>
-        </article>
-        
-    </div>
+
+<h1>Talk with our sales team</h1>
+
+<form>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" placeholder="Your name">
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Your email">
+
+  <label for="phone">Phone number:</label>
+  <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+
+  <label for="message">What would you like to discuss?</label>
+  <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+
+  <input type="submit" value="Submit">
+</form>
+
 </body>
 </html>

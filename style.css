@@ -1255,3 +1255,246 @@ footer{
     font-weight: 400;
     line-height: 4rem; /* 133.333% */
 }
+
+
+
+/* career.html */
+
+.career-sec1-img{
+    width: 100%;
+}
+
+.career-sec2-card{
+    margin: 4rem;
+    background: #F4F4F4;
+    padding: 29px 89px 34px 36px;
+    width: 34rem;   
+}
+.career-section2{
+    display: flex;
+    gap: 5rem;
+}
+.career-h5{
+    color: rgba(18, 18, 18, 0.60);
+    font-family: IBM Plex Sans;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 135.938%; /* 1.01956rem */
+    text-transform: uppercase;
+}
+.career-h1{
+    margin-top: 1.5rem;
+    color: #121212;
+    text-align: justify;
+    font-family: DM Sans;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135.938%; /* 2.03906rem */
+}
+.career-p{
+    margin-top: 1.5rem;
+    color: rgba(0, 0, 0, 0.60);
+    text-align: justify;
+    font-family: IBM Plex Sans;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135.938%; /* 1.18944rem */
+}
+.career-p1{
+    margin-top: 1.5rem;
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135.938%; /* 1.18944rem */
+}
+.career-list{
+    margin-top: 1.5rem;
+    padding: 0 18px;
+    color: rgba(0, 0, 0, 0.60);
+    text-align: justify;
+    font-family: IBM Plex Sans;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135.938%; /* 1.18944rem */
+}
+.career-form{
+    margin-top: 4rem;
+    border: .5px solid rgb(220, 219, 219);
+    width: 27rem;
+    height: 47rem;
+    padding: 20px;
+}
+.form-h2{
+    
+    color: #000;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem; /* 133.333% */
+    margin-bottom: 2rem;
+}
+.career-label{
+    /* productive / label-01 */
+    font-family: IBM Plex Sans;
+    font-size: 0.85rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1rem; /* 133.333% */
+    letter-spacing: 0.02rem;
+    
+}
+.apply-form {
+    /* background-color: #f4f4f4; */
+    padding: 20px;
+    /* border-radius: 5px; */
+    margin-top: 20px;
+}
+
+.apply-form label, .apply-form input {
+    display: block;
+    margin: 20px 0;
+    width: 100%;
+}
+
+
+.apply-form input[type="submit"] {
+    border-radius: 0.75rem;
+    
+    background: #B327C1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 60%;
+    text-align: left;
+}
+
+.apply-form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.custom-file-upload {
+    border-bottom: 2px solid gray;
+    background-color:#F4F4F4;
+    display: inline-block;
+    padding: 15px 0;
+    height: 20px;
+
+}
+
+input[type=file] {
+display: none;
+}
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color:#F4F4F4;
+    height: 50px;
+}
+.select{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 50px;
+    width: 24.5rem;
+    background-color:#F4F4F4;
+    border-bottom: 2px solid gray;
+}
+.career-label1{
+    /* productive / label-01 */
+    font-family: IBM Plex Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+     /* 133.333% */
+    letter-spacing: 0.02rem;
+    padding-left: 10px;
+}
+
+.material-symbols-outlined{
+ padding-left: 12rempx;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* blog.html */
+
+.blog-sec1{
+    color: #B327C1;
+    font-family: Poppins;
+    font-size: 13.01088rem;
+    /* font:bolder; */
+
+    font-weight: 1000;
+    line-height: 15.75rem; /* 121.053% */
+}
+
+
+/* contact.html */
+
+
+.contact-section{
+    margin-top: 5rem;
+    text-align: center;
+ 
+}
+.contact-flex1{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap:8rem;    
+}
+.contact-flex2{
+    display: flex;
+}
+.form-flex{
+    color: #000;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem; /* 133.333% */
+    margin-bottom: 2rem;
+}
+.career-card{
+    background-color: #F4F4F4;
+    padding: 15px;
+    height: 16rem;
+    width: 15rem;
+    margin-top: 3rem;
+}
+.a{
+    border-left: 1px solid gray;
+}
+.contact-div{
+    margin-top: 2.5rem;
+}
+.b{
+    width: 30rem;
+}
+.c{
+    line-height: 1.5;
+}
+.d{
+    width: 27.5rem;
+}
