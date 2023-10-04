@@ -117,7 +117,7 @@ header{
     flex-shrink: 0;
 }    
 .sec2{
-   
+   background-color: #0000000A;
    text-align:center;
    font-family: IBM Plex Sans;
    color:rgba(0, 0, 0, 0.64);
@@ -126,7 +126,7 @@ header{
    justify-content: center;
    align-items:center;
    display: flex;
-   gap:68px;
+   
   
 }
 
@@ -138,8 +138,9 @@ header{
    
     display: flex;
     justify-content: space-between;
-    margin: 10rem 0rem;
+    margin: 10rem;
     gap:3rem;
+    margin-left: 157px;
     
 }
 .sec-p{
@@ -161,17 +162,17 @@ header{
 
 .sec3-img1{
     position: absolute;
-    top: 1395px;
+    top: 1067px;
     right: 413px;
 }
 .sec3-img2{
     position: absolute;
-    top: 1309px;
+    top: 980px;
     right: 212px;
 }
 .sec3-img3{
     position: absolute;
-    top: 1551px;
+    top: 1224px;
     right: 241px;
 }
 .sec3-font{
@@ -247,6 +248,8 @@ header{
 .section4{
     text-align: center;
     margin-top: 20rem;
+    margin-left: 128px;
+    margin-right: 145px;
 }
 .sec4-p{
     overflow: hidden;
@@ -264,6 +267,7 @@ header{
 }  
 
 .section5{
+    margin-top: 5rem;
     text-align: center;
     padding: 0px 95px;
     
@@ -314,6 +318,7 @@ header{
     position: relative;
     bottom: 6px;
     right: 38px;
+    height: 43rem;
 }
 .sec5-img1{
     position: absolute;
@@ -323,8 +328,8 @@ header{
 }
 .sec5-img2{
     position: absolute;
-    top: 174rem;
-    left: 57rem;
+    top: 158rem;
+    left: 53rem;
 
 }
 .card-pos{
@@ -354,6 +359,8 @@ header{
 }
 .sec6-div{
     margin-top: 55px;
+    text-align: center;
+     margin-bottom: 19PX;
 }
 .sec6-link1{
     
@@ -402,12 +409,13 @@ header{
 .sec6-card1{
     border-radius: 20px;
     background-color: #F4F4F4;
-    padding: 26px 21px;
-    height: 120px;
-    width: 213px;
+    padding: 10px 10px;
+    width: 209px;
+    height: 136px;
 }
 .sec6-card-img{
     height: 24px;
+
 }
 .sec6-card1:hover {
     background: linear-gradient(45deg, 
@@ -442,6 +450,7 @@ header{
 }
 
 .sec6-p1{
+    margin-top: 2rem;
     color: #000;
     font-family: IBM Plex Sans;
     font-size: 1rem;
@@ -509,6 +518,7 @@ header{
     /* display: flex; */
     /* margin-left: 27rem; */
     font-family: IBM Plex Sans;
+    
 }
 .services2{
     width: 28rem;
@@ -560,7 +570,9 @@ line-height: 1.5rem; /* 150% */
 
 
 .test{
-    text-align: center;
+    
+    align-items: center;
+    /* text-align: center; */
     font-family: Montserrat;
 }
 .test1{
@@ -585,6 +597,7 @@ line-height: 1.5rem; /* 150% */
 }
 
 .test-h2{
+    
     color: #000;
     font-family: IBM Plex Sans;
     font-size: 1.5rem;
@@ -699,7 +712,7 @@ line-height: 1.5rem; /* 150% */
 }
 
 .article_card__thumb {
-    height: 245px;
+    height: 250px;
     overflow: hidden;
     background-color: #000;
     background: linear-gradient(45deg, #4200FF, #820FE7, #9C29BE, #FD7042, #FC9D49); /* Gradient added here */
@@ -731,7 +744,7 @@ line-height: 1.5rem; /* 150% */
 
 .article_card__body {
     position: relative;
-    height: 142px;
+    height: 150px;
     padding: 20px;
     -webkit-transition: height 0.5s;
     transition: height 0.5s;
@@ -817,7 +830,7 @@ line-height: 1.5rem; /* 133.333% */
 footer{
     position:static;
     background-color:#F4F4F4;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
 }
 .footer{
     display: flex;
@@ -933,7 +946,7 @@ footer{
     align-items: flex-start;
     gap: 0.625rem;
     flex-shrink: 0;
-    margin-top: 16px;
+    /* margin-top: 16px; */
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -954,7 +967,7 @@ footer{
     align-items: flex-start;
     gap: 0.625rem;
     flex-shrink: 0;
-    margin-top: 16px;
+    /* margin-top: 16px; */
     cursor: pointer;
     transition: background-color 0.3s ease;
     
@@ -975,7 +988,7 @@ footer{
     align-items: flex-start;
     gap: 0.625rem;
     flex-shrink: 0;
-    margin-top: 16px;
+    /* margin-top: 16px; */
     
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -996,7 +1009,7 @@ footer{
     align-items: flex-start;
     gap: 0.625rem;
     flex-shrink: 0;
-    margin-top: 16px;
+    /* margin-top: 16px; */
     cursor: pointer;
     transition: background-color 0.3s ease;
     
@@ -1017,12 +1030,100 @@ footer{
     align-items: flex-start;
     gap: 0.625rem;
     flex-shrink: 0;
-    margin-top: 16px;
+    /* margin-top: 16px; */
     cursor: pointer;
     transition: background-color 0.3s ease;
    
 }
 .sec5-p6:hover{
+    background-color: #2b157c;
+    color: white;
+}
+.sec5-p7{
+    border-radius: 20px;
+    background: #F4F4F4;
+    display: flex;
+    width: 36.4375rem;
+    height: 3.5rem;
+    padding: 0.5625rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    /* margin-top: 16px; */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 583px;
+    /* height: 72px; */
+    /* top: 430px; */
+
+   
+}
+.sec5-p7:hover{
+    background-color: #2b157c;
+    color: white;
+}
+.sec5-p8{
+    border-radius: 20px;
+    background: #F4F4F4;
+    display: flex;
+    width: 590px;
+    height: 3.5rem;
+    padding: 0.5625rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    /* margin-top: 16px; */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   
+}
+.sec5-p8:hover{
+    background-color: #2b157c;
+    color: white;
+}
+.sec5-p9{
+    border-radius: 20px;
+    background: #F4F4F4;
+    display: flex;
+    width: 627px;
+    height: 3.5rem;
+    padding: 0.5625rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    /* margin-top: 16px; */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   
+}
+.sec5-p9:hover{
+    background-color: #2b157c;
+    color: white;
+}
+.sec5-p10{
+    border-radius: 20px;
+    background: #F4F4F4;
+    display: flex;
+    width: 688px;
+    height: 3.5rem;
+    padding: 0.5625rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    /* margin-top: 16px; */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   
+}
+.sec5-p10:hover{
     background-color: #2b157c;
     color: white;
 }
@@ -1059,7 +1160,7 @@ footer{
 }
 .test-flex{
     display: flex;
-  justify-content: left;
+  justify-content:center;
 }
 
 .about-1{
@@ -1498,11 +1599,20 @@ input{
 .d{
     width: 27.5rem;
 }
+.mar{
+    padding-top: 2rem;
+    margin-bottom: 0rem;
+}
+.d-flex{
+    display: flex !important;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5rem;
+    /* margin: 98px; */
+}
 
 
 /* services.html */
-
-
 
 .services-sec1-img{
     width: 100%;
@@ -1511,12 +1621,17 @@ input{
     display: flex;
     justify-content: center;
     padding: 10rem;
-    gap:1rem
+    gap: 5rem;
 }
 .services-card1{
+    position: relative;
+
     border-radius: 20px;
     background-color: #F4F4F4;
     padding: 1.5rem;
+    width: 33rem;
+    height: 12rem;
+    z-index: 1;
 }
 .service-div1{
     margin-top: 5rem;
@@ -1525,4 +1640,75 @@ input{
     border-radius: 20px;
     background-color: #F4F4F4;
     padding: 1rem 2rem;
+}
+.s1{
+    margin-top: 7rem;
+}
+.services-img1{
+    margin-top: 10rem;
+}
+.services-img2{
+    position: absolute;
+    top: 73rem;
+    right: 33rem;
+}
+.services-sec1-img3{
+    position: absolute;
+    top: 47rem;
+    right: 65rem;
+}
+
+.services-img-last{
+    margin-top: 8rem;
+}
+.services-sec1-img4{
+    margin-top: 7rem;
+}
+.services-sec1-img5{
+    position: absolute;
+    top: 118rem;
+    right: 39rem;
+}
+.s-font{
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+}
+.s-font1{
+    margin-top: 1.5rem;
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+.slider-container {
+    margin-top: 3rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    white-space: nowrap;
+    animation: marquee 20s linear infinite; /* Adjust the duration as needed (very long) */
+}
+
+img {
+    display: inline-block;
+    /* width: 100%;
+    height: auto; */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
