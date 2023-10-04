@@ -1,61 +1,51 @@
 <html>
 <head>
 <style>
-/* Style the form title */
-h1 {
-  text-align: center;
-  color: white;
-  background-color: purple;
-  padding: 10px;
-}
-
-/* Style the form */
-form {
-  width: 500px;
-  margin: 20px auto;
-  border: 2px solid #ccc;
-  padding: 20px;
-}
-
-/* Style the input fields */
-input, textarea {
+.container {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
+  height: 200px;
+  border: 5px solid black;
 }
 
-/* Style the submit button */
-input[type=submit] {
-  background-color: purple;
-  color: white;
+.left {
+  width: 50%;
+  height: 100%;
+  background: url("image/card02\ v3.svg");
+  background-size: cover;
+  float: left;
 }
 
-/* Style the labels */
-label {
-  display: block;
+.right {
+  width: 50%;
+  height: 100%;
+  background: url("image/card03\ v3.svg");
+  background-size: cover;
+  float: right;
+}
+
+.left h2 {
+  color: black;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.right h2 {
+  color: black;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 80px;
 }
 </style>
 </head>
 <body>
-
-<h1>Talk with our sales team</h1>
-
-<form>
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" placeholder="Your name">
-
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" placeholder="Your email">
-
-  <label for="phone">Phone number:</label>
-  <input type="tel" id="phone" name="phone" placeholder="Your phone number">
-
-  <label for="message">What would you like to discuss?</label>
-  <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
-
-  <input type="submit" value="Submit">
-</form>
-
+<div class="container">
+  <div class="left">
+    <h2>ERP Systems</h2>
+  </div>
+  <div class="right">
+    <h2>A world of Opportunities and Progress</h2>
+  </div>
+</div>
 </body>
 </html>

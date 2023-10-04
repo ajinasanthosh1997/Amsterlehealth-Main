@@ -1498,3 +1498,31 @@ input{
 .d{
     width: 27.5rem;
 }
+
+
+/* services.html */
+
+
+
+.services-sec1-img{
+    width: 100%;
+}
+.services-sec2{
+    display: flex;
+    justify-content: center;
+    padding: 10rem;
+    gap:1rem
+}
+.services-card1{
+    border-radius: 20px;
+    background-color: #F4F4F4;
+    padding: 1.5rem;
+}
+.service-div1{
+    margin-top: 5rem;
+}
+.services-card2{
+    border-radius: 20px;
+    background-color: #F4F4F4;
+    padding: 1rem 2rem;
+}
