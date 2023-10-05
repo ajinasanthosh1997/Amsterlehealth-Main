@@ -154,17 +154,32 @@
     <section>
         <div>
             <div class="sec6-div">
-                <a href="#" class="sec6-link1">LeHealth Enterprise</a>
+                
+                <a href="#" class="sec6-link selected" data-target="lehealth-enterprise" onclick="">LeHealth Enterprise</a>
+                <a href="#" class="sec6-link" data-target="lehealth-dental">LeHealth Dental</a>
+                <a href="#" class="sec6-link" data-target="lehealth-surgical-center">LeHealth Day Surgical Center</a>
+                <a href="#" class="sec6-link" data-target="lehealth-derma-aesthetics">LeHealth Derma & Aesthetics</a>
+                <a href="#" class="sec6-link" data-target="lehealth-lab">LeHealth Lab</a>
+                
+                <!-- <a href="#" class="sec6-link1">LeHealth Enterprise</a>
                 <a href="#" class="sec6-link">LeHealth Dental</a>
                 <a href="#" class="sec6-link">LeHealth Day Surgical Center</a>
                 <a href="#" class="sec6-link">LeHealth Derma & Aesthetics</a>
-                <a href="#" class="sec6-link">LeHealth Lab</a>
+                <a href="#" class="sec6-link">LeHealth Lab</a> -->
+    
             </div>
         </div>
         <div class="d-flex">
             <div>
                 <h4 class="sec6-head">LeHealth Enterprise</h4>
-                <p class="sec6-p1">LeHealth Enterprise is a fully integrated, advanced web-based healthcare<br> operations management system. LeHealth offers an unmatched flexibility to choose<br> and customize the operational requirements of the healthcare facilities based on<br> the current and future requirements.</p>
+                <!-- <p class="sec6-p1">LeHealth Enterprise is a fully integrated, advanced web-based healthcare<br> operations management system. LeHealth offers an unmatched flexibility to choose<br> and customize the operational requirements of the healthcare facilities based on<br> the current and future requirements.</p> -->
+                <p class="sec6-p1" id="lehealth-enterprise-desc">Tincidunt diam amet euismod consectetur urna sed. Dolor vulputate quis suspendisse risus tellus ornare mauris. Nunc eget fames sollicitudin pulvinar placerat ut sapien aliquam. Morbi feugiat nulla urna egestas pellentesque. Consequat aliquet integer et rhoncus donec a pellentesque. Lectus urna.</p>
+                <p class="sec6-p1" id="lehealth-dental-desc" style="display: none;">Aliquam vel sapien habitasse augue vivamus consequat egestas. At tincidunt facilisis interdum sollicitudin viverra. Orci viverra mi massa massa nulla elementum mi. Mi eu ultrices nisl ullamcorper consectetur gravida. Sagittis nunc lorem commodo quis pellentesque augue in hendrerit aenean.</p>
+                <p class="sec6-p1" id="lehealth-surgical-center-desc" style="display: none;">Pellentesque in porttitor erat ultrices tincidunt. Id viverra tincidunt feugiat mauris arcu mauris orci viverra. Et vitae adipiscing arcu sodales tincidunt placerat. Massa dis aliquam amet a aliquam laoreet nec. Vitae consectetur molestie ut id purus facilisi. Id non tristique tortor lobortis quis phasellus.</p>
+                <p class="sec6-p1" id="lehealth-derma-aesthetics-desc" style="display: none;">Fermentum morbi enim magna varius. A nulla egestas sem nulla senectus. Faucibus dui vulputate tortor enim nibh venenatis ut adipiscing at. Quam imperdiet integer blandit dolor leo sed sit velit. In tristique est metus etiam morbi.
+                </p>
+                <p class="sec6-p1" id="lehealth-lab-desc" style="display: none;">Facilisis ac integer at iaculis ultrices adipiscing. Ut commodo auctor odio nunc duis feugiat ac cursus. Nibh consectetur fusce nisl et penatibus ipsum sollicitudin. Tortor phasellus volutpat quam proin nunc in condimentum morbi amet. Amet quisque lectus varius neque varius egestas risus. Sed.</p>
+
                 <a href="#" class="read1">Expand all</a>
                 <div class="sec6-card">
                     <div class="sec6-card1">
@@ -188,6 +203,63 @@
                 <img src="./image/30495 1.svg" alt="">
             </div>
         </div>
+        <script>
+            // Get all the "a" tags with the class "sec6-link"
+            const links = document.querySelectorAll('.sec6-link');
+          
+            // Get all "p" tags with class "sec6-p1"
+            const descriptions = document.querySelectorAll('.sec6-p1');
+          
+            // Get the <h4> tag
+            const heading = document.querySelector('.sec6-head');
+          
+            // Add a click event listener to the parent container (event delegation)
+            document.querySelector('.sec6-div').addEventListener('click', function (e) {
+              // Check if the clicked element is an "a" tag
+              if (e.target.classList.contains('sec6-link')) {
+                // Prevent the default anchor tag behavior (prevents page refresh)
+                e.preventDefault();
+          
+                // Get the data-target attribute value of the clicked "a" tag
+                const target = e.target.getAttribute('data-target');
+          
+                // Hide all "p" tags
+                descriptions.forEach(description => {
+                  description.style.display = 'none';
+                });
+          
+                // Get the corresponding "p" tag by its ID and display it
+                const description = document.getElementById(target + '-desc');
+                description.style.display = 'block';
+          
+                // Update the <h4> tag content to match the clicked "a" tag
+                heading.textContent = e.target.textContent;
+          
+                // Remove the "selected" class from all links
+                links.forEach(link => {
+                  link.classList.remove('selected');
+                });
+          
+                // Add the "selected" class to the clicked link
+                e.target.classList.add('selected');
+          
+                // Remove the "sec6-link1" class from all links
+                links.forEach(link => {
+                  link.classList.remove('sec6-link1');
+                });
+          
+                // Add the "sec6-link1" class to the clicked link
+                e.target.classList.add('sec6-link1');
+              }
+            });
+          
+            // Display the content of the first "p" tag when the page loads
+            document.getElementById('lehealth-enterprise-desc').style.display = 'block';
+          
+            // Add the "sec6-link1" class to the first link on page load
+            links[0].classList.add('sec6-link1');
+        </script>
+          
       
     </section>
     <section class="section5">
@@ -206,8 +278,8 @@
             </div>
             <div>
                 <img src="image/Group 53.svg" class="sec5-img2">
-                <img src="image/Group 1.svg" class="sec5-img">
                 <img src="image/Group 52.svg" class="sec5-img1">
+                <img src="image/Group 1.svg" class="sec5-img">
                 
             </div>
         </div>
@@ -222,7 +294,7 @@
                 Eleifend urna integer libero aliquam. Pharetra ipsum amet enim mattis id. <br> Vel ultricies et a eu vivamus.
                  At nisl pulvinar quis ipsum. At maecenas gravida.</p>
         </div>
-        <section class="services-sec2">
+        <div class="services-sec2">
             <div class="sec1-service">
                 <div class="services-card1">
                     <h5 class="s-font">Interfacing for Lab Equipment</h5>
@@ -266,7 +338,7 @@
                     <p class="s-font1">Patient portal, which offers the patient to access the clinic specialty details and doctor availabilitv with available slots for advance appointment booking. The portal will be linked with clinic website, so the patients can access the portal from anywhere any time without any hassle. We offer fully customized patient portal to provide best fitting solution based on the clinic's requirements. Also, as an extended services, clinics can give options for online payments, patient profile update, Result and medical report.. etc.</p>
                 </div>
             </div>
-        </section>
+        </div>
         <!-- <div class="main11">
             <div class="main">
                 <div class="services2">
@@ -326,6 +398,7 @@
                 <img src="./image/1 369.svg" alt="">
                 <img src="./image/4 51.svg" alt="">
                 <img src="./image/7 1.svg" alt="">
+                
             </div>
         </div>
     </section>

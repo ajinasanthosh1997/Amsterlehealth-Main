@@ -323,13 +323,13 @@ header{
 .sec5-img1{
     position: absolute;
     top: 174rem;
-    left: 79rem;
+    left: 75rem;
 
 }
 .sec5-img2{
-    position: absolute;
-    top: 158rem;
-    left: 53rem;
+        position: absolute;
+    top: 168rem;
+    left: 55rem;
 
 }
 .card-pos{
@@ -389,6 +389,11 @@ header{
     font-family: IBM Plex Sans;
     font-size: 0.875rem;
     color: black;
+}
+.sec6-link:hover{
+    background-color:  #dad9d9;
+    border-radius: 5px;
+    height: 4px;
 }
 
 .sec6-div1{
@@ -1607,8 +1612,7 @@ input{
     display: flex !important;
     justify-content: center;
     gap: 2rem;
-    margin-top: 5rem;
-    /* margin: 98px; */
+    padding: 8rem;
 }
 
 
@@ -1625,18 +1629,19 @@ input{
 }
 .services-card1{
     position: relative;
-
+    text-align: left;
     border-radius: 20px;
     background-color: #F4F4F4;
     padding: 1.5rem;
-    width: 33rem;
-    height: 12rem;
+    width: 36rem;
+    height: 16rem;
     z-index: 1;
 }
 .service-div1{
     margin-top: 5rem;
 }
 .services-card2{
+    text-align: left;
     border-radius: 20px;
     background-color: #F4F4F4;
     padding: 1rem 2rem;
@@ -1689,13 +1694,13 @@ input{
 .slider-container {
     margin-top: 3rem;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
 }
 
 .slider {
     white-space: nowrap;
-    animation: marquee 20s linear infinite; /* Adjust the duration as needed (very long) */
+    animation: marquee 25s linear infinite; /* Adjust the duration as needed (very long) */
 }
 
 img {
@@ -1712,3 +1717,10 @@ img {
         transform: translateX(-100%);
     }
 }
+
+/* index.html  */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+   
+}
+
+
