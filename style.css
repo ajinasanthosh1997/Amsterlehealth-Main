@@ -1,15 +1,16 @@
 body{
     padding: 0;
     margin: 0;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 header{
+    margin-top: 6px;
     height: 4rem;
     display: flex;
     justify-content: space-between;
     font-family:'Poppins';
-    
+    margin-bottom: 15px;
 }
 
 .logo{
@@ -90,6 +91,7 @@ transform-origin: bottom left;
 .main-sec{
     display: flex;
     justify-content: space-between;
+    
 }
 
 .sec-h1{
@@ -301,7 +303,8 @@ transform-origin: bottom left;
 .section5{
     margin-top: 5rem;
     text-align: center;
-    padding: 0px 95px;
+    padding: 0px 50px;
+    
     
 }
 .sec4-card{
@@ -447,8 +450,8 @@ transform-origin: bottom left;
     border-radius: 20px;
     background-color: #F4F4F4;
     padding: 10px 10px;
-    width: 209px;
-    height: 136px;
+    width: 141px;
+    height: 136px;;
 }
 .sec6-card-img{
     height: 24px;
@@ -499,7 +502,7 @@ transform-origin: bottom left;
 .sec6-crd{
     color: #000;
     font-family: IBM Plex Sans;
-    font-size: 0.875rem;
+    font-size: 12px;
     font-style: normal;
     font-weight: 600;
     line-height: 1.5rem; /* 171.429% */
@@ -508,7 +511,7 @@ transform-origin: bottom left;
 .sec6-crd1{
     color: #000;
     font-family: IBM Plex Sans;
-    font-size: 0.875rem;
+    font-size: 10px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5rem; /* 171.429% */
@@ -1008,7 +1011,7 @@ footer{
     border-radius: 20px;
     background: #F4F4F4;
     display: flex;
-    width: 47.375rem;
+    width: 46rem;
     height: 3.5rem;
     padding: 0.5625rem 2rem;
     flex-direction: column;
@@ -1022,7 +1025,9 @@ footer{
 }
 .sec5-p1:hover{
     background-color: #2b157c;
+    width: 46rem;
     color: white;
+    height: 4rem;
 }
 
 
@@ -1044,7 +1049,9 @@ footer{
 }
 .sec5-p2:hover{
     background-color: #2b157c;
+    width: 46rem;
     color: white;
+    height: 4rem;
 }
 
 .sec5-p3{
@@ -1067,6 +1074,8 @@ footer{
 .sec5-p3:hover{
     background-color: #2b157c;
     color: white;
+    width: 46rem;
+    height: 4rem;
 }
 .sec5-p4{
     border-radius: 20px;
@@ -1088,6 +1097,8 @@ footer{
 .sec5-p4:hover{
     background-color: #2b157c;
     color: white;
+    width: 46rem;
+    height: 4rem;
 }
 .sec5-p5{
     border-radius: 20px;
@@ -1109,33 +1120,15 @@ footer{
 .sec5-p5:hover{
     background-color: #2b157c;
     color: white;
+    width: 46rem;
+    height: 4rem;
 }
-.sec5-p6{
-    border-radius: 20px;
-    background: #F4F4F4;
-    display: flex;
-    width: 36.4375rem;
-    height: 3.5rem;
-    padding: 0.5625rem 2rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 0.625rem;
-    flex-shrink: 0;
-    /* margin-top: 16px; */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-   
-}
-.sec5-p6:hover{
-    background-color: #2b157c;
-    color: white;
-}
+
 .sec5-p7{
     border-radius: 20px;
     background: #F4F4F4;
     display: flex;
-    width: 36.4375rem;
+    width: 38.375rem;
     height: 3.5rem;
     padding: 0.5625rem 2rem;
     flex-direction: column;
@@ -1146,7 +1139,7 @@ footer{
     /* margin-top: 16px; */
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width: 583px;
+    /* width: 583px; */
     /* height: 72px; */
     /* top: 430px; */
 
@@ -1155,12 +1148,14 @@ footer{
 .sec5-p7:hover{
     background-color: #2b157c;
     color: white;
+    width: 46rem;
+    height: 4rem;
 }
 .sec5-p8{
     border-radius: 20px;
     background: #F4F4F4;
     display: flex;
-    width: 590px;
+    width: 40.25rem;
     height: 3.5rem;
     padding: 0.5625rem 2rem;
     flex-direction: column;
@@ -1176,12 +1171,14 @@ footer{
 .sec5-p8:hover{
     background-color: #2b157c;
     color: white;
+    width: 46rem;
+    height: 4rem;
 }
 .sec5-p9{
     border-radius: 20px;
     background: #F4F4F4;
     display: flex;
-    width: 627px;
+    width: 43rem;
     height: 3.5rem;
     padding: 0.5625rem 2rem;
     flex-direction: column;
@@ -1197,12 +1194,14 @@ footer{
 .sec5-p9:hover{
     background-color: #2b157c;
     color: white;
+    width: 46rem;
+    height: 4rem;
 }
 .sec5-p10{
     border-radius: 20px;
     background: #F4F4F4;
     display: flex;
-    width: 688px;
+    width: 46rem;
     height: 3.5rem;
     padding: 0.5625rem 2rem;
     flex-direction: column;
@@ -1218,6 +1217,8 @@ footer{
 .sec5-p10:hover{
     background-color: #2b157c;
     color: white;
+    width: 46rem;
+    height: 4rem;
 }
 .sec5-font{
     color: rgba(0, 0, 0, 0.64);
