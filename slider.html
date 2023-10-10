@@ -1,60 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Image Slider</title>
-    <style>
-      body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: Arial, sans-serif;
-}
-
-.slider-container {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-.slider {
-    white-space: nowrap;
-    animation: marquee 20s linear infinite; /* Adjust the duration as needed (very long) */
-}
-
-img {
-    display: inline-block;
-    /* width: 100%;
-    height: auto; */
-}
-
-@keyframes marquee {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-    
-    </style>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").fadeTo("slow",0.45);
+  });
+});
+</script>
 </head>
+
 <body>
-    <div class="slider-container">
-        <div class="slider">
-            <img src="./image/9 532.svg" alt="">
-            <img src="./image/8 1.svg" alt="">
-            <img src="./image/6 88.svgg" alt="">
-            <img src="./image/3 1.svg" alt="">
-            <img src="./image/5 1.svg" alt="">
-            <img src="./image/2 41.svg" alt="">
-            <img src="./image/1 369.svg" alt="">
-            <img src="./image/4 51.svg" alt="">
-            <img src="./image/7 1.svg" alt="">
-        </div>
-    </div>
+<div style="background:yellow;width:300px;height:300px">
+<button>Click to Fade</button>
+</div>
 </body>
 </html>
+

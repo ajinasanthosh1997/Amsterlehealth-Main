@@ -1,7 +1,7 @@
 body{
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 header{
@@ -595,11 +595,65 @@ line-height: 1.5rem; /* 150% */
 }
 .img_one{
     position: absolute;
-    top: 339rem;
+    top: 351rem;
     right: 44rem;
     width: 16rem;
    
 }
+.testimg{
+    width: 5rem;
+}
+
+
+.testimonial-container {
+    position: relative;
+}
+
+.testimonial {
+    display: none;
+    opacity: 0;
+}
+
+.testimonial.active {
+    display: block;
+    opacity: 1;
+    animation: fadeText 5s linear infinite;
+}
+
+.carousel-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+@keyframes fadeText {
+    0% {
+        opacity: 0;
+        transform: translateX(-5px);
+    }
+    10%, 90% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(5px);
+    }
+}
+
 
 .test-h2{
     
@@ -765,7 +819,7 @@ line-height: 1.5rem; /* 150% */
     text-align: left;
     color: rgba(18, 18, 18, 0.87);
     font-family: Poppins;
-    font-size: 1.5rem;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 2rem; /* 133.333% */
@@ -775,7 +829,7 @@ line-height: 1.5rem; /* 150% */
     position: absolute;
     left: 20px;
     right: 20px;
-    bottom: 56px;
+    bottom: 25px;
 
     opacity: 0;
     -webkit-transform: translateY(45px);
@@ -793,7 +847,8 @@ font-family: IBM Plex Sans;
 font-size:14px;
 font-style: normal;
 font-weight: 400;
-line-height: 1.5rem; /* 133.333% */
+line-height: 1.5rem;
+
 }
 
 .article_card:hover .article_card__description {
@@ -1158,6 +1213,15 @@ footer{
     color: rgba(0, 0, 0, 0.87);
     text-align: center;
     font-family: IBM Plex Serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 4rem; /* 152.381% */
+}
+.test-f{
+    color: rgba(0, 0, 0, 0.87);
+    text-align: center;
+    font-family: 'Times New Roman';
     font-size: 30px;
     font-style: italic;
     font-weight: 400;
@@ -1641,10 +1705,12 @@ input{
     margin-top: 5rem;
 }
 .services-card2{
+    position: relative;
     text-align: left;
     border-radius: 20px;
     background-color: #F4F4F4;
     padding: 1rem 2rem;
+    z-index: 1;
 }
 .s1{
     margin-top: 7rem;
@@ -1690,31 +1756,29 @@ input{
     font-weight: 400;
 }
 
-
 .slider-container {
-    margin-top: 3rem;
-    width: 100%;
-    /* overflow: hidden; */
-    position: relative;
+    width: full; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the slider */
+    overflow: hidden;
 }
 
 .slider {
-    white-space: nowrap;
-    animation: marquee 25s linear infinite; /* Adjust the duration as needed (very long) */
+    display: flex;
+    animation: slideImages 15s linear infinite;
 }
 
-img {
-    display: inline-block;
-    /* width: 100%;
-    height: auto; */
+.slider img {
+    width: full; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 10px; /* Adjust spacing between images */
 }
 
-@keyframes marquee {
+@keyframes slideImages {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-1200px); /* Adjust the total width of all images */
     }
 }
 

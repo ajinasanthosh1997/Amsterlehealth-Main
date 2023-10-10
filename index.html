@@ -22,7 +22,7 @@
     <header>
         <div class="logo">
             <div>
-                <img src="image/CORRECTED- LeHealth Logo 1.svg" class="">
+                <a href="index.html"><img src="image/CORRECTED- LeHealth Logo 1.svg" class=""></a>
             </div>
             <div class="icon">
                 <img src="image/twitter-icon-circle-blue-seeklogo.com 1.svg" alt="">
@@ -372,18 +372,53 @@
                 <img src="./image/Page 1 2.svg" alt="">
             </div>
         </div> -->
+     
+        
         <div class="test">
             <h4 class="gradient-text1 test-font">Testimonials</h4>
-            <div class="test-flex">
-                
-                <h2 class="test-h2"> Leading Medical Care Company in Seattle, WA</h2> 
+            <div class="test-flex testimonial-container">
+                <h2 class="testimonial test-h2 active">Leading Medical Care Company in Seattle, WA</h2>
+                <h2 class="testimonial test-h2">Leading Medical Care Company in California</h2>
+                <h2 class="testimonial test-h2">Leading Medical Care Company in New York</h2>
             </div>
             <img class="img_one" src="./image/Polygon 1.svg" alt="">
-            <img  src="./image/Ellipse 13.svg" alt="">
-            <h2 class="gradient-text test-font1">"</h2>
-            <h2 class="test1 test-font1">LeHealth has revolutionized our<br> medical practice, streamlining<br> operations and improving patient<br> care. It's a game-changer for<br> modern healthcare."</h2>
-            
+            <img src="./image/Ellipse 13.svg" alt="" class="testimg">
+            <h2 class="gradient-text test-f">"</h2>
+            <div class="testimonial-container">
+                <p class="testimonial test-font1 active">LeHealth has revolutionized our<br> medical practice, streamlining<br> operations and improving patient<br> care. It's a game-changer for<br> modern healthcare.</p>
+                <p class="testimonial test-font1">"LeHealth simplified our practice,<br> ensuring precision and patient<br> satisfaction. It's the future of<br> healthcare management."</p>
+                <p class="testimonial test-font1">"LeHealth has transformed our<br> clinic's efficiency and patient<br> management. It's the prescription<br> for a smoother, more effective<br> healthcare experience."</p>
+            </div>
         </div>
+        <div class="carousel-dots">
+            <span class="dot active" onclick="changeTestimonial(0)"></span>
+            <span class="dot" onclick="changeTestimonial(1)"></span>
+            <span class="dot" onclick="changeTestimonial(2)"></span>
+        </div>
+        
+        <script>
+            var testimonials = document.querySelectorAll('.testimonial');
+            var dots = document.querySelectorAll('.dot');
+            var currentIndex = 0;
+        
+            function changeTestimonial(index) {
+                testimonials[currentIndex].classList.remove('active');
+                dots[currentIndex].classList.remove('active');
+        
+                currentIndex = index;
+        
+                testimonials[currentIndex].classList.add('active');
+                dots[currentIndex].classList.add('active');
+            }
+        
+            function autoChangeTestimonial() {
+                var nextIndex = (currentIndex + 1) % testimonials.length;
+                changeTestimonial(nextIndex);
+            }
+        
+            setInterval(autoChangeTestimonial, 5000); // Change every 5 seconds
+        </script>
+                       
     </section>
     <section class="V_CARE"> 
         <h2 class="vcare-head gradient-text1">Proud Customers of LeHealth</h2>
@@ -391,16 +426,27 @@
             <div class="slider">
                 <img src="./image/9 532.svg" alt="">
                 <img src="./image/8 1.svg" alt="">
-                <img src="./image/6 88.svgg" alt="">
+                <img src="./image/6 88.svg" alt="">
                 <img src="./image/3 1.svg" alt="">
                 <img src="./image/5 1.svg" alt="">
                 <img src="./image/2 41.svg" alt="">
                 <img src="./image/1 369.svg" alt="">
                 <img src="./image/4 51.svg" alt="">
                 <img src="./image/7 1.svg" alt="">
-                
+                <img src="./image/9 532.svg" alt="">
+                <img src="./image/8 1.svg" alt="">
+                <img src="./image/6 88.svg" alt="">
+                <img src="./image/3 1.svg" alt="">
+                <img src="./image/5 1.svg" alt="">
+                <img src="./image/2 41.svg" alt="">
+                <img src="./image/1 369.svg" alt="">
+                <img src="./image/4 51.svg" alt="">
+                <img src="./image/7 1.svg" alt="">
             </div>
         </div>
+        
+        
+        
     </section>
 
     <section class="section-last">
