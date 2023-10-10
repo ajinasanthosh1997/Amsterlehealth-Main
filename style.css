@@ -5,6 +5,7 @@ body{
 }
 
 header{
+    height: 4rem;
     display: flex;
     justify-content: space-between;
     font-family:'Poppins';
@@ -36,7 +37,38 @@ header{
     color: black !important;
     text-decoration: none;      
     padding:5px 15px;
+    position: relative;
+  text-decoration: none;
+  color: #333; /* Change the color to your desired text color */
+  transition: color 0.3s, background-image 0.3s; /* Transition for smooth color change */
+  background-image: linear-gradient(45deg, #4200FF, #820FE7, #9C29BE, #FD7042, #FC9D49); /* Apply the background gradient */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
     
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Adjust the height of the underline as needed */
+    bottom: .75rem;
+    left: 0;
+    background-image: linear-gradient(45deg, #4200FF, #820FE7, #9C29BE, #FD7042, #FC9D49); /* Adjust the gradient colors as needed */
+    transform: scaleX(0); /* Initially, the underline is hidden */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out; /* Transition for the underline animation */
+  }
+  
+.nav-link:hover {
+color: #007bff;
+/* Change the color to the hover text color */
+}
+
+.nav-link:hover::after {
+transform: scaleX(1); /* Show the underline on hover */
+transform-origin: bottom left;
 }
 .nav1{
     display: flex;
@@ -888,7 +920,7 @@ line-height: 1.5rem; /* 133.333% */
     gap: 2rem;
 }
 footer{
-    position:static;
+    /* position:static; */
     background-color:#F4F4F4;
     /* margin-top: 5rem; */
 }
